@@ -3,7 +3,9 @@
   padding: 0;
 }
 
+html,
 body {
+  scroll-behavior: smooth;
   font-family: Arial, Helvetica, sans-serif;
   background: #333;
   color: #fff;
@@ -74,7 +76,7 @@ section#hjem {
 }
 
 section#timeplan {
-  background-color: skyblue;
+  background-color: #2a9d8f;
 }
 
 section#timeplan h1 {
@@ -82,7 +84,11 @@ section#timeplan h1 {
 }
 
 section#omoss {
-  background-color: rgb(235, 235, 123);
+  background-color: #e9c46a;
+}
+
+section#kontakt {
+  background-color: #264653;
 }
 
 .dropbtn {
@@ -130,12 +136,35 @@ section#omoss {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: red;
+  background-color: #333;
   max-width: 300px;
   margin: auto;
   text-align: center;
   font-family: arial;
   margin-top: 2em;
+  transition: transform 250ms linear;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 2em 1em 0 1em;
+}
+
+.card__image {
+  border-radius: 5px;
+}
+
+.card__btn {
+  border-radius: 5px;
+}
+
+@media (max-width: 45em) {
+  .card {
+    max-width: 50%;
+  }
+}
+
+.card:hover,
+.card:focus {
+  transform: scale(1.05);
 }
 
 .split {
