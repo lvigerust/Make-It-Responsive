@@ -83,9 +83,6 @@ section#timeplan h1 {
 
 section#omoss {
   background-color: rgb(235, 235, 123);
-  padding-top: 80px;
-}
-section#kontakt {
 }
 
 .dropbtn {
@@ -138,6 +135,21 @@ section#kontakt {
   margin: auto;
   text-align: center;
   font-family: arial;
+  margin-top: 2em;
+}
+
+.split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.split > * {
+  flex-basis: 30%;
+  min-width: 15em;
 }
 
 .card h1 {
