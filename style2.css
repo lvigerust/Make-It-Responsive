@@ -61,7 +61,7 @@ section {
 }
 
 section h1 {
-  font-size: 4rem;
+  font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
   text-shadow: #000 5px 5px 25px;
   letter-spacing: 3px;
 }
@@ -81,6 +81,16 @@ section#timeplan {
 
 section#timeplan h1 {
   margin-top: -70px;
+}
+
+section#inova {
+  background-color: #e76f51;
+}
+
+#pinova {
+  margin-top: 25px;
+  padding: 0 5em 0 5em;
+  overflow: hidden;
 }
 
 section#omoss {
@@ -146,6 +156,7 @@ section#kontakt {
   cursor: pointer;
   border-radius: 5px;
   margin: 2em 1em 0 1em;
+  padding: 2em 2em 2em 2em;
 }
 
 .card__image {
@@ -156,9 +167,19 @@ section#kontakt {
   border-radius: 5px;
 }
 
-@media (max-width: 45em) {
-  .card {
-    max-width: 50%;
+@media (max-width: 1378px) {
+  section#omoss {
+    height: 160vh;
+  }
+}
+@media (max-width: 850px) {
+  section#omoss {
+    height: 180vh;
+  }
+}
+@media (max-width: 688px) {
+  section#omoss {
+    height: 240vh;
   }
 }
 
