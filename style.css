@@ -231,15 +231,16 @@ a:hover {
 }
 
 .mapouter {
-  position: relative;
+  /* position: relative; */
   text-align: right;
   height: 288px;
-  width: 435px;
+  width: 80%;
   padding-top: 2em;
 }
+
 .gmap_canvas {
-  overflow: hidden;
-  background: none !important;
   height: 288px;
-  width: 443px;
+  width: 80%;
+  border-radius: 1em;
+  overflow: hidden;
 }
