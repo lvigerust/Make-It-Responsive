@@ -229,3 +229,17 @@ button:hover,
 a:hover {
   opacity: 0.7;
 }
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 288px;
+  width: 435px;
+  padding-top: 2em;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 288px;
+  width: 443px;
+}
