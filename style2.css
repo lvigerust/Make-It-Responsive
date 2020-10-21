@@ -90,7 +90,6 @@ section#inova {
 #pinova {
   margin-top: 25px;
   padding: 0 5em 0 5em;
-  overflow: hidden;
 }
 
 section#omoss {
@@ -167,14 +166,14 @@ section#kontakt {
   border-radius: 5px;
 }
 
-@media (max-width: 1378px) {
+@media (max-width: 1220px) {
   section#omoss {
-    height: 160vh;
+    height: 150vh;
   }
 }
 @media (max-width: 850px) {
   section#omoss {
-    height: 180vh;
+    height: 170vh;
   }
 }
 @media (max-width: 688px) {
