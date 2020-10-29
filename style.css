@@ -12,6 +12,10 @@ body {
   line-height: 1.6;
 }
 
+img {
+  width: 100%;
+}
+
 .container {
   width: 100%;
   height: 100vh;
@@ -67,19 +71,80 @@ section#hjem {
   max-width: 56em;
   margin: 0 auto;
 }
-.om-inova-content {
-}
 
 #omoss {
   background-color: #e9c46a;
-  padding: 6.25em 0;
+  padding: 10.75em 0;
 }
 .om-oss-container {
-  width: 80%;
-  max-width: 56em;
+  width: 100%;
+  max-width: 70em;
   margin: 0 auto;
 }
-.om-oss-content {
+
+.cards-container {
+  margin-top: 2em;
+  /* border: 2px solid red; */
+  position: relative;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 450px;
+  /* perspective: 1200px; */
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.flip-card-front {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  background-color: #333;
+  color: white;
+}
+.flip-card-front img {
+  width: 80%;
+  border-radius: 10px;
+}
+
+.flip-card-back p {
+  font-size: 21px;
+}
+
+.flip-card-back {
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
 }
 
 .kontakt-container {
@@ -133,55 +198,21 @@ section#hjem {
   background-color: #f9f9f9;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #333;
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  margin-top: 2em;
-  transition: transform 250ms linear;
-  cursor: pointer;
-  border-radius: 5px;
-  margin: 2em 1em 0 1em;
-  padding: 2em 2em 2em 2em;
-}
-
-.card__image {
-  border-radius: 5px;
-}
-
-.card__btn {
-  border-radius: 5px;
-}
-
-.card:hover,
-.card:focus {
-  transform: scale(1.05);
-}
-
 .split {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1em;
+  flex-direction: row;
+  gap: 2em;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .split > * {
   flex-basis: 30%;
-  min-width: 15em;
+  min-width: 20em;
 }
 
-.card h1 {
-  font-size: 35px;
-}
-.title {
-  color: grey;
-  font-size: 18px;
-}
 button {
   border: none;
   outline: 0;
