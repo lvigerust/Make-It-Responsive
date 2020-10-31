@@ -182,8 +182,8 @@ section#hjem {
   margin-top: 2px;
 }
 .dropdown-content a {
-  color: black;
   padding: 10px 220px;
+  color: black;
   border-radius: 5px;
   text-decoration: none;
   display: block;
@@ -276,8 +276,24 @@ a:hover {
   text-decoration: none;
   text-transform: uppercase;
   color: #f4f4f4;
+
 }
 
 .navbar ul li a:hover {
   color: skyblue;
+}
+@media screen and (max-width:500px){
+	.dropbtn {
+		width: 300px;
+	}
+	.dropdown-content a {
+		padding:0;
+	}
+	.navbar ul li {
+		margin: 0;
+		padding:10px;
+	}
+	.navbar ul li a {
+		font-size: 11px;
+	}
 }
