@@ -107,7 +107,13 @@ section#hjem {
   transform: rotateY(180deg);
 }
 
-.flip-card:checked .flip-card-inner {
+@media screen and (min-width: 748px) {
+  .click {
+    transform: rotateY(180deg);
+  }
+}
+
+.card-btn {
   transform: rotateY(180deg);
 }
 
