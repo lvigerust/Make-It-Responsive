@@ -194,11 +194,13 @@ section#hjem {
   margin-top: 2px;
 }
 .dropdown-content a {
-  padding: 10px 220px;
+  padding: 20px 160px;
   color: black;
   border-radius: 5px;
   text-decoration: none;
   display: block;
+  border: 2px solid black;
+  margin: 5px;
 }
 .dropdown-content a:hover {
   background-color: #f1f1f1;
