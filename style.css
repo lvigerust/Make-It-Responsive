@@ -226,14 +226,8 @@ section#hjem {
 }
 
 @media screen and (max-width: 720px) {
-  .split {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: row;
-    margin-top: 3em;
-    flex-wrap: wrap;
-    justify-content: center;
+  .card + .card {
+    margin-top: 2em;
   }
 
   .split > * {
