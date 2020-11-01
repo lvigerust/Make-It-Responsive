@@ -225,6 +225,23 @@ section#hjem {
   min-width: 20em;
 }
 
+@media screen and (max-width: 720px) {
+  .split {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3em;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .split > * {
+    flex-basis: 30%;
+    min-width: 20em;
+  }
+}
+
 button {
   border: none;
   outline: 0;
